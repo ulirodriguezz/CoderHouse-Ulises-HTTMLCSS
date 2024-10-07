@@ -1,0 +1,352 @@
+
+:root{
+    --color-secundario:#3C3C3C;
+    --bg-principal : #23242A;
+    --color-titulos: #ad87cd;
+    --color-nav:#f7d3ff;
+    --titulos-seccion:#ceb2e6;
+    --texto-principal:#7b7b7b;
+    --texto-seccion:#dfd7e7;
+    --borders : 2px solid var(--color-titulos);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+table 
+{
+   align-content: center;
+}
+body
+{
+    background-color: var(--bg-principal);
+    font-family: "Roboto";
+    
+}
+h1{
+    text-align: center;
+    font-weight: 900;
+    color:  #8d53bc;
+}
+h2,h3,h4{
+    font-weight: 900;
+    color: var(--color-titulos)
+}
+
+nav{
+    text-align: center;
+    position: sticky;
+    top: 3%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 1em;
+}
+header nav a {
+    padding: 3%;
+}
+header a:hover{
+    border-bottom: var(--borders);
+}
+a{
+    text-decoration: none;
+    color: var(--color-nav);
+}
+p{
+    color:  var(--texto-principal);
+    font-size: 15px;
+}
+div{
+    background-color:#35363C;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    border-top:var(--borders);
+    padding: 1em;
+   
+}
+.logo-con-nombre{
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-principal);
+}
+.logo-con-nombre h4{
+
+    margin-left: 0.5em;
+}
+.logos-contacto-footer{
+    background-color: var(--bg-principal);
+    display: flex;
+    justify-content: space-around;
+}
+.logos-contacto-footer img{
+    padding: 0.1em;
+}
+.seccion-principal{
+    background-color:#35363C;
+    border: var(--borders);
+    margin: 1%;
+}
+.seccion-principal h2{
+    text-align: center;
+    color: var(--titulos-seccion);
+}
+.seccion-principal p{
+    color: var(--texto-seccion);
+}
+.seccion-principal label{
+    color: var(--texto-seccion);
+}
+.seccion-grande{
+    border-top: var(--borders);
+}
+.tituloPrincipal{
+    color: var(--main-color);
+    text-align: center;
+    font-size: 44px;
+}
+.anuncio{
+    color: var(--bg-principal);
+    background-color:var(--color-titulos);
+    text-align: center;
+    position:sticky;
+    top: 5px;
+    padding: 4px;
+}
+.anuncio p
+{
+    color: var(--bg-principal);
+}
+.encabezado-principal{
+    background-color: var(--bg-principal);
+    border-bottom: var(--borders);
+}
+.tabla-posiciones tr th{
+    color: var(--titulos-seccion);
+}
+.tabla-posiciones tr td{
+    color:var(--texto-seccion);
+}
+.tarjeta-partido tr{
+    background-color: var(--bg-principal);
+
+}
+.tarjeta-noticia{
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    margin: 0.6rem;
+    padding: 0.4rem;
+}
+#seccion-inscripciones{
+    display: grid;
+    padding: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    height: 90%;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45%;
+    grid-template-areas:
+    "item-1 item-2" 
+    "item-1 item-3";
+    gap: 10%;
+    row-gap: 15%;
+}
+.form-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: var(--borders);
+    border: 2px solid var(--color-titulos);
+    background-color: var(--bg-principal);
+    padding: 1%;
+    padding-top: 0.4%;
+    padding-bottom: 4%;
+    border-radius:20px;
+    height: 40vh;
+    width: 60%;
+}
+.form-div label{
+    display: block;
+    margin-top: 1rem;
+    font-size: small;
+    color: var(--texto-seccion);
+    padding-left: 0.3%;
+    font-weight: 600;
+}
+.form-div h3{ 
+    padding:5%;
+    padding-bottom: 5%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    text-align: center;
+    color: #dfd7e7;
+}
+.text-input{
+    background-color:#d7b7f3;
+    border-radius: 5px;
+    height: 2.8vh;
+    width: 18vw;
+    padding-left: 2%;
+}
+.text-input:focus{
+    background-color:#d7b7f3;
+    border: 2px solid black;
+}
+#form-submit{
+    grid-area: item-3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction:column;
+    width: 60%;
+    height: 90%;
+}    
+.text-selectable-button{
+    display: flex;
+    align-items: center;
+}
+.text-selectable-button label{
+    margin-left: 10%;
+}
+#button-submit{
+    display: block;
+    font-weight: 900;
+    background-color: var(--color-titulos);
+    color: white;
+    width: 100%;
+    transition: 0.2s;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2%;
+    margin: 2% 0% 0% 0%
+}
+#button-submit:hover{
+    background-color: #d7b7f3;
+    color: black;
+ 
+}
+#form-capitan{
+    grid-area: item-1;
+    justify-self: center;
+}
+#form-equipos{
+    grid-area: item-2;
+    height: 20vh;   
+    width: 60%;
+    padding-bottom: 5%;
+    
+}
+#form-equipos h3{
+    padding-bottom: 1%;
+    margin-bottom: 0.3vh;
+
+}
+#form-equipos form .checkbox
+{
+    display: inline;
+}
+.menu-radial{
+    background-color: var(--bg-principal);
+    display: flex;
+    flex-direction:row;
+    padding-left: 2%;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-end;
+}
+.menu-radial label
+{
+    margin-right: 2%;
+}
+.menu-radial input{
+    margin-right: 10%;
+    accent-color: var(--color-titulos); 
+
+}
+.logo{
+    height: 50px;
+}
+.logo2{
+    height: 25px;
+
+}
+#video-home{
+    height: 250px;
+}
+
+@media (max-width:768px){
+
+    /* Seccion de inscripciones (Vista Mobile) */
+    #seccion-inscripciones{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        align-items: center;
+      
+    }
+    /* Form del capitan */
+    .form-div{
+        width: 100%;
+        padding-bottom: 10%;
+        margin-bottom: 2%;
+        align-items: center;
+    }
+    .form-div label{
+        display: block;
+        margin-top: 1rem;
+        font-size: small;
+        color: var(--texto-seccion);
+        padding-left: 0.3%;
+        font-weight: 600;
+    }
+    .form-div h3{ 
+        padding:5%;
+        padding-bottom: 5%;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        text-align: center;
+        color: #dfd7e7;
+    }
+    .text-input{
+        background-color:#d7b7f3;
+        border-radius: 5px;
+        width: 70vw;
+        padding-left: 2%;
+    }
+
+    /* Form de equipos */
+  
+    #form-capitan{
+        grid-area: item-1;
+        justify-self: center;
+    }
+    #form-equipos{
+        grid-area: item-2;
+        height: 20vh;   
+        width: 100%;
+        padding-bottom: 5%;
+        
+    }
+    #form-equipos h3{
+        padding-bottom: 1%;
+        margin-bottom: 0.3vh;
+
+    }
+    #form-equipos form .checkbox
+    {
+        display: inline;
+    }
+    #form-submit{
+        width: 100%;
+    }    
+
+
+}
