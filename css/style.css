@@ -44,12 +44,7 @@ nav ul li{
     list-style: none;
     margin: 1em;
 }
-header nav a {
-    padding: 3%;
-}
-header a:hover{
-    border-bottom: var(--borders);
-}
+
 a{
     text-decoration: none;
     color: var(--color-nav);
@@ -62,6 +57,55 @@ div{
     background-color:#35363C;
 }
 
+/* Estilos del header */
+header nav a {
+    padding: 3%;
+}
+header a:hover{
+    border-bottom: var(--borders);
+}
+header h1
+{
+    font-size: 3.4rem;
+    margin-left: 10px;
+}
+.encabezado-principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-principal);
+    border-bottom: var(--borders);
+}
+.logo{
+    height: 3.6rem;
+}
+.anuncio{
+    color: var(--bg-principal);
+    background-color:var(--color-titulos);
+    text-align: center;
+    position:sticky;
+    top: 5px;
+    padding: 4px;
+}
+.anuncio p
+{
+    color: var(--bg-principal);
+}
+.seccion-imagenes{
+    display: flex;
+    justify-content: space-around;
+    border: var(--borders);
+    padding: 0.5%;
+    margin: 1%;
+}
+.seccion-imagenes img{
+    width:  30rem;
+    height: 20rem;
+    object-fit: cover;
+
+}
+
+/* Estilos del footer */
 footer{
     display: flex;
     align-items: center;
@@ -70,6 +114,9 @@ footer{
     border-top:var(--borders);
     padding: 1em;
    
+}
+footer .logo{
+    height: 3rem;
 }
 .logo-con-nombre{
     display: flex;
@@ -88,6 +135,8 @@ footer{
 .logos-contacto-footer img{
     padding: 0.1em;
 }
+
+/* Estilos generales de secciones */
 .seccion-principal{
     background-color:#35363C;
     border: var(--borders);
@@ -111,22 +160,34 @@ footer{
     text-align: center;
     font-size: 44px;
 }
-.anuncio{
-    color: var(--bg-principal);
-    background-color:var(--color-titulos);
-    text-align: center;
-    position:sticky;
-    top: 5px;
-    padding: 4px;
+
+/* Estilos Home (index.html) */
+.seccion-home{
+    display: flex;
+    margin-top: 1%;
+
 }
-.anuncio p
-{
-    color: var(--bg-principal);
-}
-.encabezado-principal{
+.seccion-home div{
+    justify-content: left;
+    width:55%;
     background-color: var(--bg-principal);
-    border-bottom: var(--borders);
+    margin: 1%;
 }
+.seccion-home h2{
+   font-size: 2.5rem;
+   margin-bottom: 1%;
+}
+.seccion-home p{
+    font-size: 1.5rem;
+ }
+ #video-home{
+     margin-top: 1%;
+     width: 40%;
+}
+
+
+
+
 .tabla-posiciones tr th{
     color: var(--titulos-seccion);
 }
@@ -271,15 +332,9 @@ footer{
     accent-color: var(--color-titulos); 
 
 }
-.logo{
-    height: 50px;
-}
 .logo2{
     height: 25px;
 
-}
-#video-home{
-    height: 250px;
 }
 
 @media (max-width:768px){
