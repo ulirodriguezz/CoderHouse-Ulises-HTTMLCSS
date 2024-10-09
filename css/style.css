@@ -393,8 +393,8 @@ footer .logo{
    
 }
 .info-equipo img{
-    width: 8%;
-    height: auto;
+    width: auto;
+    height: 80%;
     margin-right: 2%;
     margin-left: 5%;
     object-fit: fill;
