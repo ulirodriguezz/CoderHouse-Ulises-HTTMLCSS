@@ -78,6 +78,7 @@ header h1
 {
     font-size: 3.4rem;
     margin-left: 10px;
+    margin-bottom: 0px;
 }
 .encabezado-principal{
     display: flex;
@@ -90,6 +91,7 @@ header h1
     height: 3.6rem;
 }
 .anuncio{
+    height: 2rem;
     color: var(--bg-principal);
     background-color:var(--color-titulos);
     text-align: center;
@@ -230,7 +232,7 @@ footer .logo{
 }
 /* Estilos partidos (partidos.html) */
 #seccion-partidos{
-    min-height: 25rem;
+    min-height: 40rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -251,7 +253,7 @@ footer .logo{
     border-radius: 10px;
     overflow: hidden;
     width: 40%;
-    height: 8rem;
+    height: 10rem;
     display: grid;
     grid-template-rows: 80% 20%;
     grid-template-columns: 40% 20% 40%;
@@ -354,7 +356,7 @@ footer .logo{
     flex-direction: row;
     align-items: center;
     width: 100%;
-    height: 3.5rem;
+    height:6rem;
     border: var(--borders);
     border-radius: 10px;
     margin-bottom: 1.5%;
@@ -408,7 +410,7 @@ footer .logo{
     padding: 1rem;
     padding-left: 4rem;
     padding-right: 4rem;
-    min-height: 25rem;
+    min-height: 40rem;
     grid-template-columns: 45% 45%;
     grid-template-rows: 45% 45%;
     grid-template-areas:
@@ -416,6 +418,9 @@ footer .logo{
     "item-1 item-3";
     gap: 10%;
     row-gap: 15%;
+    overflow: hidden;
+    align-items: top;
+    justify-items: center
 }
 .form-div{
     display: flex;
@@ -455,7 +460,7 @@ footer .logo{
 .text-input{
     background-color:#d7b7f3;
     border-radius: 5px;
-    height: 18%;
+    height: 23%;
     width: 100%;
     padding-left: 2%;
 }
@@ -472,12 +477,13 @@ footer .logo{
     width: 60%;
     height: 90%;
 }    
-.text-selectable-button{
+.boton-checkbox{
     display: flex;
     align-items: center;
 }
-.text-selectable-button label{
-    margin-left: 10%;
+.boton-checkbox label{
+    margin-top: 7%;
+    margin-left: 15%;
 }
 #button-submit{
     display: block;
@@ -508,7 +514,7 @@ footer .logo{
     
 }
 #form-equipos .text-input{
-    height: 32%;
+    height: 40%;
 }
 #form-equipos h3{
     padding-bottom: 1%;
@@ -520,16 +526,18 @@ footer .logo{
     display: inline;
 }
 .menu-radial{
+    margin-top: 2%;
     background-color: var(--bg-principal);
     display: flex;
     flex-direction:row;
     padding-left: 2%;
     justify-content: flex-start;
-    align-content: center;
-    align-items: flex-end;
+    align-items: center;
+
 }
 .menu-radial label
 {
+    margin-top: 0px;
     margin-right: 2%;
 }
 .menu-radial input{
