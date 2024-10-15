@@ -1,0 +1,35 @@
+
+header{
+    nav{
+        a{
+            padding: 3%;
+        }
+    }
+    h1{
+        font-size: 3.4rem;
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+}
+.encabezado-principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-principal;
+    border-bottom: $borders;
+}
+.logo{
+    height: 3.6rem;
+}
+.seccion-imagenes{
+    display: flex;
+    justify-content: space-around;
+    border: $borders;
+    padding: 0.5%;
+    margin: 1%;
+    margin-bottom: 5%;
+    img{
+        width:  24%;
+        object-fit: cover;
+    }
+}

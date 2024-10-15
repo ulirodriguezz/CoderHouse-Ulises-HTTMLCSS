@@ -1,0 +1,50 @@
+@import "../utilities/variables";
+
+
+.form-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // border: var(--borders);
+    // border: 2px solid var(--color-titulos);
+    // background-color: var(--bg-principal);
+    padding: 1%;
+    padding-top: 0.4%;
+    padding-bottom: 4%;
+    border-radius:20px;
+    height: 80%;
+    width: 90%;
+    box-shadow: 5px 5px 50px rgba(244, 196, 237, 0.35);
+
+    form{
+        width: 100%;
+        padding: 0% 5% 0% 5%;
+    }
+    h3{
+        padding:5%;
+        padding-bottom: 5%;
+        margin-top: 1%;
+        text-align: center;
+        color: #dfd7e7;
+    }
+    label{
+        display: block;
+        margin-top: 1rem;
+        font-size: small;
+        // color: var(--texto-seccion);
+        padding-left: 0.3%;
+        font-weight: 600;
+    }
+    .text-input{
+        background-color:#d7b7f3;
+        border-radius: 5px;
+        height: 23%;
+        width: 100%;
+        padding-left: 2%;
+        // .text-input:focus{
+        //     background-color:#d7b7f3;
+        //     border: 2px solid black;
+        // }
+    }
+
+}

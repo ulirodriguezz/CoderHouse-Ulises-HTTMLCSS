@@ -1,0 +1,35 @@
+
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    border-top:var(--borders);
+    padding: 1em;
+    .logo{
+        height: 3rem;
+    }
+   
+}
+.logo-con-nombre{
+    display: flex;
+    align-items: center;
+    // background-color: var(--bg-principal);
+    h4{
+        margin-left: 0.5em;
+    }
+}
+.logos-contacto-footer{
+    // background-color: var(--bg-principal);
+    display: flex;
+    justify-content: space-around;
+    img{
+        padding: 0.1em;
+    }
+}
+.logo2{
+    height: 25px;
+
+}
