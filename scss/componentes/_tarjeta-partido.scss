@@ -1,0 +1,84 @@
+@import "../utilities/variables";
+
+
+
+.tarjeta-partido{
+    margin-top: 1%;
+    background-color: $bg-principal;
+    border: var(--borders);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 45%;
+    height: 10rem;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    grid-template-columns: 40% 20% 40%;
+    gap: 0%;
+    grid-template-areas:
+    "equipo-1 score equipo-2"
+    "nro-fecha horario fecha";
+    h4{
+        font-size: 1.3rem;
+    }
+}
+.escudo-equipo{
+    height: 50%;
+    width: auto;
+    object-fit: fill;
+    margin:2%
+}
+.equipo-1{
+    background-color:$bg-principal;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: equipo-1;
+    border-right: $borders;
+    padding: 1%;
+
+    h4{
+        margin-right: 3%;
+    }
+}
+.partido-score{
+    text-align: center;
+    align-self: center;
+    grid-area: score;
+    padding: 1%;
+}
+.equipo-2{
+    background-color: $bg-principal;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: equipo-2;
+    border-left: $borders;
+    padding: 1%;
+    h4{
+        margin-left: 3%;
+    }
+}
+.partido-nro-fecha{
+    border-top: $borders;
+    border-right: $borders;
+    text-align: center;
+    grid-area: nro-fecha;
+    padding: 1%;
+    margin: 0px;
+}
+.partido-hora{
+    border-top: $borders;
+    text-align: center;
+    grid-area: horario;
+    padding: 1%;
+}
+.partido-fecha{
+    border-top: $borders;
+    border-left: $borders;
+    text-align: center;
+    grid-area: fecha;
+    padding: 1%;
+    margin: 0px;
+}

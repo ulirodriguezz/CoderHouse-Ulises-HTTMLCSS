@@ -1,0 +1,17 @@
+@import "../utilities/variables";
+
+
+
+#seccion-intro-inscripciones{
+    display: flex;
+    align-items:flex-start;
+}
+#imagen-inscripciones{
+    width: 50%;
+    margin: 3%;
+}
+#texto-intro-inscripciones{
+    background-color: $bg-principal;
+    margin: 3% 2% 0% 0%;
+    width: 50%;
+}

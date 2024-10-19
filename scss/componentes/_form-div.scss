@@ -5,9 +5,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    // border: var(--borders);
-    // border: 2px solid var(--color-titulos);
-    // background-color: var(--bg-principal);
+    border: $borders;
+    border: 2px solid $color-titulos;
+    background-color: $bg-principal;
     padding: 1%;
     padding-top: 0.4%;
     padding-bottom: 4%;
@@ -31,7 +31,7 @@
         display: block;
         margin-top: 1rem;
         font-size: small;
-        // color: var(--texto-seccion);
+        color: $texto-seccion;
         padding-left: 0.3%;
         font-weight: 600;
     }
@@ -41,10 +41,10 @@
         height: 23%;
         width: 100%;
         padding-left: 2%;
-        // .text-input:focus{
-        //     background-color:#d7b7f3;
-        //     border: 2px solid black;
-        // }
+        .text-input:focus{
+            background-color:#d7b7f3;
+            border: 2px solid black;
+        }
     }
 
 }

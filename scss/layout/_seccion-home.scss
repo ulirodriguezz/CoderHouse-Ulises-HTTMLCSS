@@ -1,0 +1,27 @@
+@import "../utilities/variables";
+
+
+.seccion-home{
+    display: flex;
+    margin-top: 1%;
+    align-items: center;
+
+    div{
+        justify-content: left;
+        width:55%;
+        background-color: $bg-principal;
+        margin: 1%;
+    }
+    h2{
+        font-size: 2rem;
+        margin-bottom: 1%;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+#video-home{
+    margin-top: 1%;
+    width: 40%;
+    height: 60%;
+}

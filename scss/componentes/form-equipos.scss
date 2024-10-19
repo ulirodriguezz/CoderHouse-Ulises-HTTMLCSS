@@ -1,0 +1,40 @@
+@import "../utilities/variables";
+
+
+#form-equipos{
+    grid-area: item-2;
+    height: 100%;   
+    width: 90%;
+    padding-bottom: 5%;
+    .text-input{
+        height: 40%;
+    }
+    h3{
+        padding-bottom: 1%;
+        margin-bottom: 0.3%;
+    }
+    form{
+        .checkbox{
+            display: inline;
+        }
+    }
+}
+.menu-radial{
+    margin-top: 2%;
+    background-color: $bg-principal;
+    display: flex;
+    flex-direction:row;
+    padding-left: 2%;
+    justify-content: flex-start;
+    align-items: center;
+
+    label{
+        margin-top: 0px;
+        margin-right: 2%;
+    }
+    input{
+        margin-right: 10%;
+        accent-color: $color-titulos; 
+    }
+
+}

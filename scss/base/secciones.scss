@@ -1,0 +1,26 @@
+@import "../utilities/variables";
+
+
+.seccion-principal{
+    background-color:#35363C;
+    border: $borders;
+    margin: 1%;
+}
+.seccion-principal h2{
+    text-align: center;
+    color: $texto-seccion;
+}
+.seccion-principal p{
+    color: $texto-seccion;
+}
+.seccion-principal label{
+    color: $texto-seccion;
+}
+.seccion-grande{
+    border-top: $borders;
+}
+.tituloPrincipal{
+    color: $main-color;
+    text-align: center;
+    font-size: 44px;
+}

@@ -1,0 +1,33 @@
+
+
+table 
+{
+   align-content: center;
+}
+body
+{
+    background-color: var(--bg-principal);
+    font-family: "Roboto";
+    
+}
+h1{
+    text-align: center;
+    font-weight: 900;
+    color:  #8d53bc;
+}
+h2,h3,h4{
+    margin-left: 1%;
+    font-weight: 900;
+    color: var(--color-titulos)
+}
+a{
+    text-decoration: none;
+    color: var(--color-nav);
+}
+p{
+    color:  var(--texto-principal);
+    font-size: 15px;
+}
+div{
+    background-color:#35363C;
+}

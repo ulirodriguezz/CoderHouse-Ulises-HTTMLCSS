@@ -1,0 +1,21 @@
+@import "../utilities/variables";
+
+nav{
+    text-align: center;
+    top: 3%;
+    position: sticky;
+    top: 0px;
+    ul{
+        background-color: $bg-principal;
+        opacity: 0.8;
+        li{
+            display: inline-block;
+            list-style: none;
+            margin: 1em;
+            opacity: 1;
+        }
+    
+    }
+
+
+}

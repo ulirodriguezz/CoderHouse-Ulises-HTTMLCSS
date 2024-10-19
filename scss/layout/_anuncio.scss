@@ -1,0 +1,12 @@
+@import "../utilities/variables";
+
+.anuncio{
+    height: 2rem;
+    color: $bg-principal;
+    background-color:$color-titulos;
+    text-align: center;
+    padding: 4px;
+    p{
+        color: $bg-principal;
+    }
+}
