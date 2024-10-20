@@ -1,0 +1,46 @@
+@import "../utilities/variables";
+
+.home-inscribite{
+    height: 15rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5% 0% 10% 1%;
+    gap: 10%;
+    width: 80%;
+    background: rgb(173,135,205);
+    background: linear-gradient(90deg, rgba(173,135,205,1) 0%, rgba(155,102,199,1) 31%, rgba(117,29,191,1) 100%);
+
+}
+.home-inscribite-div1{
+    width: 45%;
+    background-color: transparent;
+    h3{
+        color: rgb(48, 42, 42);
+    }
+    p{
+        color: rgb(71, 66, 66);   
+    }
+}
+.home-inscribite-div2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2%;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 125%;
+    padding: 1%;
+    width: 20%;
+    transform: translateY(45px);
+    a{
+        background-color: transparent;
+        transition: 0.4s;
+        &:hover{
+            color: $color-titulos;
+            transform: scale(1.2)
+        }
+    }
+    text-align: center;
+    box-shadow: 1px -1px 107px 12px rgba(0,0,0,0.66);
+}

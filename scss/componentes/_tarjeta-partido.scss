@@ -5,7 +5,7 @@
 .tarjeta-partido{
     margin-top: 1%;
     background-color: $bg-principal;
-    border: var(--borders);
+    border: $borders;
     border-radius: 10px;
     overflow: hidden;
     width: 45%;

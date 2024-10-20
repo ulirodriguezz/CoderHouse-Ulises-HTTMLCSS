@@ -4,8 +4,13 @@
 header{
     nav{
         a{
-            padding: 3%;
+            padding: 3%;  
+            &:hover{
+                border-bottom: $borders;
+                transform: scale(2);
+            }   
         }
+        
     }
     h1{
         font-size: 3.4rem;

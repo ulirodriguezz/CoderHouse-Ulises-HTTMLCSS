@@ -1,2 +1,28 @@
-@import "./layout/*";
-@import "./componentes/"
+@import "./base/reset";
+@import "./base/generales";
+@import "./base/secciones.scss";
+@import "./layout/anuncio";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/nav";
+@import"./layout/main-home";
+@import "./layout/seccion-home";
+@import"./layout/seccion-home-isncribite";
+@import "./layout/seccion-intro-inscripciones";
+
+@import "./layout/seccion-inscripciones";
+@import "./componentes/form-div";
+@import "./componentes/form-submit-div.scss";
+@import "./componentes/form-capitan";
+@import "./componentes/form-equipos.scss";
+
+@import "./layout/seccion-noticias";
+@import "./componentes/tarjeta-notica";
+
+@import "./layout/seccion-partidos";
+@import "./componentes/contenedor-tarjeta-partidos";
+@import "./componentes/tarjeta-partido";
+
+@import "./layout/seccion-posiciones";  
+@import "./componentes/tabla-posiciones";
+@import "./componentes/tarjeta-tabla";

@@ -1,4 +1,4 @@
-
+@import "../utilities/variables";
 
 table 
 {
@@ -6,7 +6,7 @@ table
 }
 body
 {
-    background-color: var(--bg-principal);
+    background-color: $bg-principal;
     font-family: "Roboto";
     
 }
@@ -18,14 +18,14 @@ h1{
 h2,h3,h4{
     margin-left: 1%;
     font-weight: 900;
-    color: var(--color-titulos)
+    color: $color-titulos;
 }
 a{
     text-decoration: none;
-    color: var(--color-nav);
+    color: $color-nav;
 }
 p{
-    color:  var(--texto-principal);
+    color:  $texto-principal;
     font-size: 15px;
 }
 div{
