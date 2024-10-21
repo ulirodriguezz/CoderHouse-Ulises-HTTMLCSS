@@ -1,0 +1,17 @@
+@import "../utilities/variables";
+@media(max-width : 425px){
+    header{
+        align-items: center;
+        nav{
+            ul{
+                li{
+                    margin: 1%;
+                }
+            }
+            a{
+                font-size: 0.9rem;
+            }
+        }
+    }
+   
+}

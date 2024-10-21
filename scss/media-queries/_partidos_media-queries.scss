@@ -1,0 +1,26 @@
+@media(max-width : 425px){
+    .contenedor-tajetas-partidos{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .tarjeta-partido{
+        margin-top: 2%;
+        width: 95%;
+        height: 7rem;
+        h4{
+            font-size: 1rem;
+        }
+    }
+    .escudo-equipo{
+        height: 50%;
+        width: auto;
+        object-fit: fill;
+        margin:2%
+    }
+    .equipo-1{
+        flex-direction: column;
+    }
+    .equipo-2{
+        flex-direction: column;
+    }
+}

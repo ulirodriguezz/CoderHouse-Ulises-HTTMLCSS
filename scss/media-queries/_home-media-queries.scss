@@ -1,0 +1,53 @@
+@media(max-width : 425px){
+    .seccion-home{
+        flex-direction: column;
+        div{
+            justify-content: center;
+            width: 90%;
+        }
+    }
+    #video-home{
+        margin-top: 1%;
+        width: 90%;
+        height: 60%;
+    }
+    .home-inscribite{
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        width: 90%;
+        height: auto;
+        padding-bottom: 10%;
+        background: linear-gradient(180deg, rgba(173,135,205,1) 0%, rgba(155,102,199,1) 31%, rgba(117,29,191,1) 100%);
+    
+    }
+    .home-inscribite-div1{
+        width: 90%;
+        margin-top: 5%;
+        text-align: center;
+    }
+    .home-inscribite-div2{
+        gap: 2%;
+        height: auto;
+        padding: 1%;
+        width: 90%;
+        a{
+            background-color: transparent;
+            transition: 0.4s;
+            &:hover{
+                color: $color-titulos;
+                transform: scale(1.2)
+            }
+        }
+        text-align: center;
+        box-shadow: 1px -1px 107px 12px rgba(0,0,0,0.66);
+    }
+    
+
+
+
+
+
+
+
+}

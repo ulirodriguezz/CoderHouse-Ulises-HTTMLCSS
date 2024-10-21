@@ -168,6 +168,7 @@ nav {
   top: 0px;
 }
 nav ul {
+  padding: 0px;
   background-color: hsl(231, 9%, 15%);
   opacity: 0.8;
 }
@@ -609,6 +610,9 @@ nav ul li {
   width: 10%;
   text-align: center;
 }
+.posicion-tabla h4 {
+  margin: 0px;
+}
 
 .info-equipo {
   background-color: hsl(231, 9%, 15%);
@@ -629,6 +633,137 @@ nav ul li {
 .info-equipo h4 {
   margin: 0px;
   background-color: hsl(231, 9%, 15%);
+}
+
+@media (max-width: 425px) {
+  .seccion-home {
+    flex-direction: column;
+  }
+  .seccion-home div {
+    justify-content: center;
+    width: 90%;
+  }
+  #video-home {
+    margin-top: 1%;
+    width: 90%;
+    height: 60%;
+  }
+  .home-inscribite {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    width: 90%;
+    height: auto;
+    padding-bottom: 10%;
+    background: linear-gradient(180deg, rgb(173, 135, 205) 0%, rgb(155, 102, 199) 31%, rgb(117, 29, 191) 100%);
+  }
+  .home-inscribite-div1 {
+    width: 90%;
+    margin-top: 5%;
+    text-align: center;
+  }
+  .home-inscribite-div2 {
+    gap: 2%;
+    height: auto;
+    padding: 1%;
+    width: 90%;
+    text-align: center;
+    box-shadow: 1px -1px 107px 12px rgba(0, 0, 0, 0.66);
+  }
+  .home-inscribite-div2 a {
+    background-color: transparent;
+    transition: 0.4s;
+  }
+  .home-inscribite-div2 a:hover {
+    color: #ad87cd;
+    transform: scale(1.2);
+  }
+}
+@media (max-width: 425px) {
+  header {
+    align-items: center;
+  }
+  header nav ul li {
+    margin: 1%;
+  }
+  header nav a {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 425px) {
+  #seccion-noticias {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarjeta-noticia {
+    width: 90%;
+  }
+}
+@media (max-width: 425px) {
+  .contenedor-tajetas-partidos {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .tarjeta-partido {
+    margin-top: 2%;
+    width: 95%;
+    height: 7rem;
+  }
+  .tarjeta-partido h4 {
+    font-size: 1rem;
+  }
+  .escudo-equipo {
+    height: 50%;
+    width: auto;
+    object-fit: fill;
+    margin: 2%;
+  }
+  .equipo-1 {
+    flex-direction: column;
+  }
+  .equipo-2 {
+    flex-direction: column;
+  }
+}
+@media (max-width: 425px) {
+  #seccion-posiciones {
+    align-items: center;
+  }
+  .tabla-posiciones {
+    width: 90%;
+  }
+  .encabezado-tabla {
+    width: 100%;
+  }
+  .tarjeta-tabla {
+    justify-content: flex-end;
+    height: 4rem;
+  }
+  .posicion-tabla h4 {
+    font-size: 1rem;
+    margin: 0px;
+  }
+  .info-equipo {
+    width: 45%;
+  }
+  .info-equipo img {
+    height: 40%;
+  }
+  .info-equipo h4 {
+    font-size: 0.8rem;
+  }
+  .datos-tabla {
+    justify-content: space-around;
+    display: flex;
+    margin-right: 2%;
+    width: 40%;
+    text-align: center;
+  }
+  .datos-tabla h4 {
+    width: 30%;
+    font-size: 0.7rem;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

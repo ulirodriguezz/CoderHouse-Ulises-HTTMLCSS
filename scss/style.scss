@@ -27,3 +27,11 @@
 @import "./layout/seccion-posiciones";  
 @import "./componentes/tabla-posiciones";
 @import "./componentes/tarjeta-tabla";
+
+// Media queries
+
+@import "./media-queries/_home-media-queries";
+@import "./media-queries/_header-media-queries.scss";
+@import "./media-queries/noticas-media-queries";
+@import "./media-queries/partidos_media-queries";
+@import "./media-queries/posiciones-media-quieries";
