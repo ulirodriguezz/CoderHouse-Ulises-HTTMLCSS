@@ -4,10 +4,13 @@
 header{
     nav{
         a{
-            padding: 3%;  
+            padding: 3%;
+            transition: border-bottom 0s, margin 1s ease;
+              
             &:hover{
                 border-bottom: $borders;
-                transform: scale(2);
+                margin-right: 10px;
+                margin-left: 10px;
             }   
         }
         
@@ -27,6 +30,10 @@ header{
 }
 .logo{
     height: 3.6rem;
+    transition: transform 1s;
+    &:hover{
+        transform: rotate(270deg);
+    }
 }
 .seccion-imagenes{
     display: flex;
@@ -38,5 +45,9 @@ header{
     img{
         width:  24%;
         object-fit: cover;
+        transition: 1s;
+        &:hover{
+            transform: scale(1.05);
+        }
     }
 }

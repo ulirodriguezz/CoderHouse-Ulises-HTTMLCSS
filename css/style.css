@@ -115,10 +115,12 @@ footer .logo {
 
 header nav a {
   padding: 3%;
+  transition: border-bottom 0s, margin 1s ease;
 }
 header nav a:hover {
   border-bottom: 2px solid #ad87cd;
-  transform: scale(2);
+  margin-right: 10px;
+  margin-left: 10px;
 }
 header h1 {
   font-size: 3.4rem;
@@ -136,6 +138,10 @@ header h1 {
 
 .logo {
   height: 3.6rem;
+  transition: transform 1s;
+}
+.logo:hover {
+  transform: rotate(270deg);
 }
 
 .seccion-imagenes {
@@ -149,6 +155,10 @@ header h1 {
 .seccion-imagenes img {
   width: 24%;
   object-fit: cover;
+  transition: 1s;
+}
+.seccion-imagenes img:hover {
+  transform: scale(1.05);
 }
 
 nav {
@@ -176,12 +186,14 @@ nav ul li {
 
 .seccion-home {
   display: flex;
-  margin-top: 1%;
+  margin-top: 5%;
   align-items: center;
+  justify-content: center;
+  gap: 5%;
 }
 .seccion-home div {
   justify-content: left;
-  width: 55%;
+  width: 45%;
   background-color: hsl(231, 9%, 15%);
   margin: 1%;
 }
@@ -199,12 +211,16 @@ nav ul li {
   height: 60%;
 }
 
+.texto-intro-home {
+  text-align: center;
+}
+
 .home-inscribite {
   height: 15rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 5% 0% 10% 1%;
+  margin: 15% 0% 10% 1%;
   gap: 10%;
   width: 80%;
   background: rgb(173, 135, 205);
