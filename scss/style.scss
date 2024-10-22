@@ -4,6 +4,7 @@
 @import "./layout/anuncio";
 @import "./layout/footer";
 @import "./layout/header";
+@import "./componentes/carousel-bootstrap";
 @import "./layout/nav";
 @import"./layout/main-home";
 @import "./layout/seccion-home";
@@ -34,6 +35,7 @@
 @import "./media-queries/_home-media-queries";
 // Para el header
 @import "./media-queries/_header-media-queries.scss";
+@import "./media-queries/imagenes-header-media-queries";
 // Para "noticias"
 @import "./media-queries/noticas-media-queries";
 // Para "partidos"
