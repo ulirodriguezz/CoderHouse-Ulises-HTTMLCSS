@@ -1,5 +1,5 @@
 @import "../utilities/variables";
-@media(max-width : 425px){
+@media(max-width : 426px){
     header{
         align-items: center;
         nav{
@@ -9,7 +9,7 @@
                 }
             }
             a{
-                font-size: 0.9rem;
+                font-size: 0.8rem;
             }
         }
     }

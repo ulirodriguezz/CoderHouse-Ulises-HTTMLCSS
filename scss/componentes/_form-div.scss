@@ -14,7 +14,7 @@
     border-radius:20px;
     height: 80%;
     width: 90%;
-    box-shadow: 5px 5px 50px rgba(244, 196, 237, 0.35);
+    box-shadow: 5px 5px 30px rgba(244, 196, 237, 0.35);
 
     form{
         width: 100%;
@@ -34,6 +34,7 @@
         color: $texto-seccion;
         padding-left: 0.3%;
         font-weight: 600;
+        margin-left: 3px;
     }
     .text-input{
         background-color:#d7b7f3;

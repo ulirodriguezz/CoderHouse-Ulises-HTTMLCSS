@@ -30,8 +30,15 @@
 
 // Media queries
 
+// Para el home
 @import "./media-queries/_home-media-queries";
+// Para el header
 @import "./media-queries/_header-media-queries.scss";
+// Para "noticias"
 @import "./media-queries/noticas-media-queries";
+// Para "partidos"
 @import "./media-queries/partidos_media-queries";
+// Para "posiciones"
 @import "./media-queries/posiciones-media-quieries";
+// Para "inscripciones"
+@import "./media-queries/inscripciones-media-queries";
