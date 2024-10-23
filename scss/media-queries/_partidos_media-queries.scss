@@ -1,4 +1,6 @@
-@media(max-width : 426px){
+
+// Tablets y mobile (Comunes a ambas)
+@media(min-width : 320px) and (max-width:769px){
     .contenedor-tajetas-partidos{
         flex-direction: column;
         flex-wrap: nowrap;
@@ -23,4 +25,21 @@
     .equipo-2{
         flex-direction: column;
     }
+   
+}
+
+
+
+
+//Solo mobile
+@media(max-width : 426px){
+
+}
+
+//Solo tablet
+@media(min-width : 427px) and (max-width:769px){
+    .tarjeta-partido{
+        height: 8rem;
+    }
+
 }

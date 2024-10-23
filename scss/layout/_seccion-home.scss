@@ -1,14 +1,11 @@
 @import "../utilities/variables";
-
+@import "../utilities/mixins";
 
 .seccion-home{
-    display: flex;
+    @include flex(row,center,center);
     margin-top: 5%;
-    align-items: center;
-    justify-content: center;
     gap: 5%;
     div{
-        justify-content: left;
         width:45%;
         background-color: $bg-principal;
         margin: 1%;

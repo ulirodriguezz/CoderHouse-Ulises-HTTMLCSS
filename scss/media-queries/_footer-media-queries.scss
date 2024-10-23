@@ -1,0 +1,37 @@
+@import "../utilities/mixins";
+
+// Tablets y mobile (Comunes a ambas)
+@media(min-width : 320px) and (max-width:769px){
+    footer{
+        .logo{
+            height: 2rem;
+        }
+        p{
+            width: 50%;
+        }
+    }
+    .logo-con-nombre{
+        width: 25%;
+        h4{
+            margin-left: 0.5em;
+            font-size: 1rem;
+        }
+    }
+    .logos-contacto-footer{
+        width: 25%;
+        img{
+            width: 35%;
+        }
+    }
+
+}
+//Solo tablet
+@media(min-width : 427px) and (max-width:769px){
+    .logos-contacto-footer{
+        width: 15%;
+        img{
+            width: 25%;
+            margin: 0px;
+        }
+    }
+}

@@ -1,9 +1,8 @@
-
+@import "../utilities/mixins";
 
 
 #seccion-noticias{
+    @include flex(row,normal,space-around);
     min-height:60rem ;
-    display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
 }

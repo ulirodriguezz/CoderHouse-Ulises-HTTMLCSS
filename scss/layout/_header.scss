@@ -1,4 +1,5 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 
 
 header{
@@ -23,9 +24,7 @@ header{
     }
 }
 .encabezado-principal{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(row,center,center);
     background-color: $bg-principal;
     border-bottom: $borders;
 }
@@ -37,8 +36,7 @@ header{
     }
 }
 .seccion-imagenes{
-    display: flex;
-    justify-content: space-around;
+    @include flex(row,normal,space-around);
     border: $borders;
     padding: 0.5%;
     margin: 1%;

@@ -1,11 +1,9 @@
 @import "../utilities/variables";
-
+@import "../utilities/mixins";
 
 .tarjeta-tabla{
+    @include flex(row,center,normal);
     background-color: $bg-principal;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     width: 100%;
     height:6rem;
     border: $borders;
@@ -25,17 +23,15 @@
     }
 }
 .info-equipo{
+    @include flex(row,center,flex-start);
     background-color: $bg-principal;
-    display: flex;
-    align-items: center;
     width: 60%;
     height: 100%;
-    justify-content: left;
     border-right: $borders;
    img{
     width: auto;
     height: 80%;
-    margin-right: 2%;
+    margin-right: 5%;
     margin-left: 5%;
     object-fit: fill;
    }

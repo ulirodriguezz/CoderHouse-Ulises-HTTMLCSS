@@ -1,11 +1,8 @@
-
-
-
+@import "../utilities/mixins";
 
 #seccion-partidos{
+    @include flex(column,normal,normal);
     min-height: 40rem;
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     padding: 1%;
 }

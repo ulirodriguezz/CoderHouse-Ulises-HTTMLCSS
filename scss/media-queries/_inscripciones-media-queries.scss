@@ -1,7 +1,9 @@
-@media(max-width : 426px){
+@import "../utilities/mixins";
+
+//Tablet y mobile (Comun a ambos)
+@media(min-width : 320px) and (max-width:769px){
     #seccion-intro-inscripciones{
-        flex-direction: column;
-        align-items: center;
+        @include flex(column,center,center);
     }
     #imagen-inscripciones{
         width: 90%;
@@ -14,24 +16,22 @@
     }
 
     #seccion-inscripciones{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(column,center,center);
         padding: 0px;
 
     }
     .form-div{
         margin-top: 10%;
-        width: 80%;
+        width: 90%;
         height: auto;
-        padding-bottom: 2rem;
+        padding-bottom: 4rem;
         .text-input{
             height: 2rem;
         }
     }   
 
     #form-equipos{
-        width: 80%;
+        width: 90%;
         height: auto;
         .text-input{
             height: 2rem;
@@ -40,11 +40,21 @@
     #form-submit{
         margin-top: 10%;
         margin-bottom: 5%;
-        width: 80%;
+        width: 90%;
     }
 
+}
+//Solo tablet
+@media(min-width : 427px) and (max-width:769px){
+    .form-div{
+        width: 70%;
+        padding-bottom: 8rem;
+    }   
 
-
-
-
+    #form-equipos{
+        width: 70%;
+    }
+    #form-submit{
+        width: 70%;
+    }
 }

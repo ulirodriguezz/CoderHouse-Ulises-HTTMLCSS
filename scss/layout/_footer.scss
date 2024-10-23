@@ -1,35 +1,36 @@
 @import "../utilities/variables";
-
+@import "../utilities/mixins";
 
 footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    @include flex(row,center,space-around);
     margin-top: 20px;
     border-top:$borders;
-    padding: 1em;
+    padding: 1rem;
+    height: auto;
     .logo{
         height: 3rem;
+    }
+    p{
+        text-align: center;
+        margin: 0px 20px 0px 20px;
+        height: auto
     }
    
 }
 .logo-con-nombre{
-    display: flex;
-    align-items: center;
+    @include flex(row,center,normal);
     background-color: $bg-principal;
     h4{
+        margin: 0px;
         margin-left: 0.5em;
     }
 }
 .logos-contacto-footer{
+    @include flex(row,normal,space-evenly);
     background-color: $bg-principal;
-    display: flex;
-    justify-content: space-around;
     img{
-        padding: 0.1em;
+        height: auto;
+        width:  20%;
+        margin: 0.1rem;
     }
-}
-.logo2{
-    height: 25px;
-
 }

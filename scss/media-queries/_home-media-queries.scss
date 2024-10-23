@@ -1,4 +1,7 @@
-@media(max-width : 426px){
+@import "../utilities/mixins";
+
+// Tablets y mobile (Comunes a ambas)
+@media(min-width : 320px) and (max-width:769px){
     .seccion-home{
         flex-direction: column;
         div{
@@ -11,9 +14,12 @@
         width: 90%;
         height: 60%;
     }
+   
+}
+//Solo mobile
+@media(max-width : 426px){
     .home-inscribite{
-        display: flex;
-        flex-direction: column;
+        @include flex(column,center,space-around);
         gap: 10%;
         width: 90%;
         height: auto;
@@ -42,12 +48,33 @@
         text-align: center;
         box-shadow: 1px -1px 107px 12px rgba(0,0,0,0.66);
     }
-    
+}
+//Solo tablet
+@media(min-width : 427px) and (max-width:769px){
 
-
-
-
-
-
+    .home-inscribite-div1{
+        width: 55%;
+        height: 100%;
+        margin-top: 5%;
+        margin-left: 5%;
+        text-align: center;    
+    }
+    .home-inscribite-div2{
+        gap: 2%;
+        height: auto;
+        padding: 1%;
+        width: 40%;
+        margin-right: 2%;
+        a{
+            background-color: transparent;
+            transition: 0.4s;
+            &:hover{
+                color: $color-titulos;
+                transform: scale(1.2)
+            }
+        }
+        text-align: center;
+        box-shadow: 1px -1px 107px 12px rgba(0,0,0,0.66);
+    }
 
 }

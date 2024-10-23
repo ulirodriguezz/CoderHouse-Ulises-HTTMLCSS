@@ -1,5 +1,5 @@
 @import "../utilities/variables";
-
+@import "../utilities/mixins";
 
 
 .tarjeta-partido{
@@ -28,11 +28,9 @@
     margin:2%
 }
 .equipo-1{
+    @include flex(row,center,center);
     background-color:$bg-principal;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     grid-area: equipo-1;
     border-right: $borders;
     padding: 1%;
@@ -48,15 +46,12 @@
     padding: 1%;
 }
 .equipo-2{
-    background-color: $bg-principal;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend .equipo-1;
     grid-area: equipo-2;
     border-left: $borders;
-    padding: 1%;
+    border-right:none;
     h4{
+        margin-right: 0%;
         margin-left: 3%;
     }
 }
@@ -69,16 +64,13 @@
     margin: 0px;
 }
 .partido-hora{
-    border-top: $borders;
-    text-align: center;
+    @extend .partido-nro-fecha;
+    border-right:none;
     grid-area: horario;
-    padding: 1%;
 }
 .partido-fecha{
-    border-top: $borders;
+    @extend .partido-nro-fecha;
     border-left: $borders;
-    text-align: center;
+    border-right:none;
     grid-area: fecha;
-    padding: 1%;
-    margin: 0px;
 }

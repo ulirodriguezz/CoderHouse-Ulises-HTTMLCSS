@@ -1,4 +1,6 @@
-@media(max-width : 426px){
+
+//Tablet y mobile (Comun a ambos)
+@media(min-width : 320px) and (max-width:769px){
     #seccion-posiciones{
         align-items: center;
     }
@@ -38,6 +40,28 @@
             width: 30%;
             font-size: 0.7rem;
             text-align: center;
+        }
+    }
+}
+//Solo tablet
+@media(min-width : 427px) and (max-width:769px){
+    .posicion-tabla{
+      
+        h4{
+            font-size: 1.1rem;
+        }
+    }
+    .info-equipo{
+        img{
+            height: 60%;
+        }
+        h4{
+            font-size: 1rem;
+        }
+    }
+    .datos-tabla{
+        h4{
+            font-size: 1rem;
         }
     }
 }

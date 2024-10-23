@@ -1,10 +1,8 @@
 @import "../utilities/variables";
-
+@import "../utilities/mixins";
 
 .form-div{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include flex(column,center,flex-start);
     border: $borders;
     border: 2px solid $color-titulos;
     background-color: $bg-principal;
@@ -12,7 +10,7 @@
     padding-top: 0.4%;
     padding-bottom: 4%;
     border-radius:20px;
-    height: 80%;
+    height: 85%;
     width: 90%;
     box-shadow: 5px 5px 30px rgba(244, 196, 237, 0.35);
 
@@ -22,7 +20,6 @@
     }
     h3{
         padding:5%;
-        padding-bottom: 5%;
         margin-top: 1%;
         text-align: center;
         color: #dfd7e7;
@@ -30,7 +27,7 @@
     label{
         display: block;
         margin-top: 1rem;
-        font-size: small;
+        font-size: 1rem;
         color: $texto-seccion;
         padding-left: 0.3%;
         font-weight: 600;
@@ -39,7 +36,7 @@
     .text-input{
         background-color:#d7b7f3;
         border-radius: 5px;
-        height: 23%;
+        height: 3rem;
         width: 100%;
         padding-left: 2%;
         .text-input:focus{

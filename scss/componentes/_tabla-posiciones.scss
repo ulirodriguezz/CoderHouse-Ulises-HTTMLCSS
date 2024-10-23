@@ -1,23 +1,18 @@
-
+@import "../utilities/mixins";
 
 
 
 .tabla-posiciones{
-    display: flex;
-    flex-direction: column;
+    @include flex (column,normal,normal);
     margin: 0% 10% 0% 10%;
     min-height: 30rem;
    
 }
 .encabezado-tabla{
-    display: flex;
-    justify-content: flex-end;
-   
+    @include flex (row,normal,flex-end);
 }
 .datos-tabla{
-    justify-self: center;
-    justify-content: left;
-    display: flex;
+    @include flex (row,normal,left);
     width: 30%;
     margin-right: 1%;
     text-align: center;

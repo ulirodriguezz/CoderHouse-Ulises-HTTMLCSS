@@ -8,6 +8,7 @@
     padding-bottom: 5%;
     .text-input{
         height: 40%;
+        height: 3rem;
     }
     h3{
         padding-bottom: 1%;
@@ -20,17 +21,14 @@
     }
 }
 .menu-radial{
+    @include flex(row,center,flex-start);
     margin-top: 2%;
     background-color: $bg-principal;
-    display: flex;
-    flex-direction:row;
-    padding-left: 2%;
-    justify-content: flex-start;
-    align-items: center;
 
     label{
         margin-top: 0px;
         margin-right: 2%;
+        font-size: 1rem;
     }
     input{
         margin-right: 10%;

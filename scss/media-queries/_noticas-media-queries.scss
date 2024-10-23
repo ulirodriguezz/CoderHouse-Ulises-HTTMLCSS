@@ -6,8 +6,10 @@
     .tarjeta-noticia{
         width: 90%;
     }
-
-
-
+}
+@media(min-width : 427px) and (max-width:769px){
+    .tarjeta-noticia{
+        width: 45%;
+    }
 
 }

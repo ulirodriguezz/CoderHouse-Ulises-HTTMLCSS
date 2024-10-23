@@ -1,12 +1,12 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
+
 @media(max-width : 426px){
     header{
         align-items: center;
         nav{
             ul{
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
+                @include flex(row,center,space-evenly);
                 li{
                     margin: 1%;
                 }

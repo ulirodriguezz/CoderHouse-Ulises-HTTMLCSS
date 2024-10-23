@@ -81,36 +81,46 @@ div {
 
 footer {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   margin-top: 20px;
   border-top: 2px solid #ad87cd;
-  padding: 1em;
+  padding: 1rem;
+  height: auto;
 }
 footer .logo {
   height: 3rem;
 }
+footer p {
+  text-align: center;
+  margin: 0px 20px 0px 20px;
+  height: auto;
+}
 
 .logo-con-nombre {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: normal;
   background-color: hsl(231, 9%, 15%);
 }
 .logo-con-nombre h4 {
+  margin: 0px;
   margin-left: 0.5em;
 }
 
 .logos-contacto-footer {
-  background-color: hsl(231, 9%, 15%);
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  align-items: normal;
+  justify-content: space-evenly;
+  background-color: hsl(231, 9%, 15%);
 }
 .logos-contacto-footer img {
-  padding: 0.1em;
-}
-
-.logo2 {
-  height: 25px;
+  height: auto;
+  width: 20%;
+  margin: 0.1rem;
 }
 
 header nav a {
@@ -130,6 +140,7 @@ header h1 {
 
 .encabezado-principal {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: hsl(231, 9%, 15%);
@@ -146,6 +157,8 @@ header h1 {
 
 .seccion-imagenes {
   display: flex;
+  flex-direction: row;
+  align-items: normal;
   justify-content: space-around;
   border: 2px solid #ad87cd;
   padding: 0.5%;
@@ -187,17 +200,18 @@ nav ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: normal;
 }
 
 .seccion-home {
   display: flex;
-  margin-top: 5%;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 5%;
   gap: 5%;
 }
 .seccion-home div {
-  justify-content: left;
   width: 45%;
   background-color: hsl(231, 9%, 15%);
   margin: 1%;
@@ -221,10 +235,11 @@ nav ul li {
 }
 
 .home-inscribite {
-  height: 15rem;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+  height: 15rem;
   margin: 15% 0% 10% 1%;
   gap: 10%;
   width: 80%;
@@ -246,6 +261,7 @@ nav ul li {
 .home-inscribite-div2 {
   display: flex;
   flex-direction: column;
+  align-items: normal;
   justify-content: space-around;
   gap: 2%;
   border: 2px solid black;
@@ -268,7 +284,9 @@ nav ul li {
 
 #seccion-intro-inscripciones {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
+  justify-content: normal;
 }
 
 #imagen-inscripciones {
@@ -301,8 +319,9 @@ nav ul li {
 
 .form-div {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   border: 2px solid #ad87cd;
   border: 2px solid #ad87cd;
   background-color: hsl(231, 9%, 15%);
@@ -310,7 +329,7 @@ nav ul li {
   padding-top: 0.4%;
   padding-bottom: 4%;
   border-radius: 20px;
-  height: 80%;
+  height: 85%;
   width: 90%;
   box-shadow: 5px 5px 30px rgba(244, 196, 237, 0.35);
 }
@@ -320,7 +339,6 @@ nav ul li {
 }
 .form-div h3 {
   padding: 5%;
-  padding-bottom: 5%;
   margin-top: 1%;
   text-align: center;
   color: #dfd7e7;
@@ -328,7 +346,7 @@ nav ul li {
 .form-div label {
   display: block;
   margin-top: 1rem;
-  font-size: small;
+  font-size: 1rem;
   color: #dfd7e7;
   padding-left: 0.3%;
   font-weight: 600;
@@ -337,7 +355,7 @@ nav ul li {
 .form-div .text-input {
   background-color: #d7b7f3;
   border-radius: 5px;
-  height: 23%;
+  height: 3rem;
   width: 100%;
   padding-left: 2%;
 }
@@ -347,18 +365,24 @@ nav ul li {
 }
 
 #form-submit {
-  grid-area: item-3;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  grid-area: item-3;
   width: 90%;
   height: 90%;
+}
+#form-submit p {
+  margin-left: 0.2rem;
 }
 
 .boton-checkbox {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: normal;
+  margin-left: 0.2rem;
 }
 .boton-checkbox label {
   margin-top: 7%;
@@ -395,6 +419,7 @@ nav ul li {
 }
 #form-equipos .text-input {
   height: 40%;
+  height: 3rem;
 }
 #form-equipos h3 {
   padding-bottom: 1%;
@@ -405,17 +430,17 @@ nav ul li {
 }
 
 .menu-radial {
-  margin-top: 2%;
-  background-color: hsl(231, 9%, 15%);
   display: flex;
   flex-direction: row;
-  padding-left: 2%;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
+  margin-top: 2%;
+  background-color: hsl(231, 9%, 15%);
 }
 .menu-radial label {
   margin-top: 0px;
   margin-right: 2%;
+  font-size: 1rem;
 }
 .menu-radial input {
   margin-right: 10%;
@@ -423,9 +448,11 @@ nav ul li {
 }
 
 #seccion-noticias {
-  min-height: 60rem;
   display: flex;
+  flex-direction: row;
+  align-items: normal;
   justify-content: space-around;
+  min-height: 60rem;
   flex-wrap: wrap;
 }
 
@@ -459,20 +486,22 @@ nav ul li {
 }
 
 #seccion-partidos {
-  min-height: 40rem;
   display: flex;
   flex-direction: column;
+  align-items: normal;
+  justify-content: normal;
+  min-height: 40rem;
   flex-wrap: wrap;
   padding: 1%;
 }
 
 .contenedor-tajetas-partidos {
-  margin-top: 4%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  margin-top: 4%;
+  flex-wrap: wrap;
 }
 
 .tarjeta-partido {
@@ -500,17 +529,18 @@ nav ul li {
   margin: 2%;
 }
 
-.equipo-1 {
+.equipo-1, .equipo-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   background-color: hsl(231, 9%, 15%);
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   grid-area: equipo-1;
   border-right: 2px solid #ad87cd;
   padding: 1%;
 }
-.equipo-1 h4 {
+.equipo-1 h4, .equipo-2 h4 {
   margin-right: 3%;
 }
 
@@ -522,20 +552,16 @@ nav ul li {
 }
 
 .equipo-2 {
-  background-color: hsl(231, 9%, 15%);
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   grid-area: equipo-2;
   border-left: 2px solid #ad87cd;
-  padding: 1%;
+  border-right: none;
 }
 .equipo-2 h4 {
+  margin-right: 0%;
   margin-left: 3%;
 }
 
-.partido-nro-fecha {
+.partido-nro-fecha, .partido-fecha, .partido-hora {
   border-top: 2px solid #ad87cd;
   border-right: 2px solid #ad87cd;
   text-align: center;
@@ -545,24 +571,21 @@ nav ul li {
 }
 
 .partido-hora {
-  border-top: 2px solid #ad87cd;
-  text-align: center;
+  border-right: none;
   grid-area: horario;
-  padding: 1%;
 }
 
 .partido-fecha {
-  border-top: 2px solid #ad87cd;
   border-left: 2px solid #ad87cd;
-  text-align: center;
+  border-right: none;
   grid-area: fecha;
-  padding: 1%;
-  margin: 0px;
 }
 
 #seccion-posiciones {
   display: flex;
   flex-direction: column;
+  align-items: normal;
+  justify-content: normal;
 }
 #seccion-posiciones h2 {
   margin-top: 3%;
@@ -572,19 +595,24 @@ nav ul li {
 .tabla-posiciones {
   display: flex;
   flex-direction: column;
+  align-items: normal;
+  justify-content: normal;
   margin: 0% 10% 0% 10%;
   min-height: 30rem;
 }
 
 .encabezado-tabla {
   display: flex;
+  flex-direction: row;
+  align-items: normal;
   justify-content: flex-end;
 }
 
 .datos-tabla {
-  justify-self: center;
-  justify-content: left;
   display: flex;
+  flex-direction: row;
+  align-items: normal;
+  justify-content: left;
   width: 30%;
   margin-right: 1%;
   text-align: center;
@@ -596,10 +624,11 @@ nav ul li {
 }
 
 .tarjeta-tabla {
-  background-color: hsl(231, 9%, 15%);
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: normal;
+  background-color: hsl(231, 9%, 15%);
   width: 100%;
   height: 6rem;
   border: 2px solid #ad87cd;
@@ -620,18 +649,19 @@ nav ul li {
 }
 
 .info-equipo {
-  background-color: hsl(231, 9%, 15%);
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
+  background-color: hsl(231, 9%, 15%);
   width: 60%;
   height: 100%;
-  justify-content: left;
   border-right: 2px solid #ad87cd;
 }
 .info-equipo img {
   width: auto;
   height: 80%;
-  margin-right: 2%;
+  margin-right: 5%;
   margin-left: 5%;
   object-fit: fill;
 }
@@ -641,6 +671,73 @@ nav ul li {
 }
 
 @media (max-width: 426px) {
+  header {
+    align-items: center;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  header nav ul li {
+    margin: 1%;
+  }
+  header nav a {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 426px) {
+  .carousel {
+    display: block;
+    margin: 5% 0% 10% 0%;
+    padding: 0% 2% 0% 2%;
+    background-color: hsl(231, 9%, 15%);
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 13rem;
+  }
+  .seccion-imagenes {
+    display: none;
+  }
+}
+@media (min-width: 427px) and (max-width: 769px) {
+  .seccion-imagenes {
+    height: 11.5rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 769px) {
+  footer .logo {
+    height: 2rem;
+  }
+  footer p {
+    width: 50%;
+  }
+  .logo-con-nombre {
+    width: 25%;
+  }
+  .logo-con-nombre h4 {
+    margin-left: 0.5em;
+    font-size: 1rem;
+  }
+  .logos-contacto-footer {
+    width: 25%;
+  }
+  .logos-contacto-footer img {
+    width: 35%;
+  }
+}
+@media (min-width: 427px) and (max-width: 769px) {
+  .logos-contacto-footer {
+    width: 15%;
+  }
+  .logos-contacto-footer img {
+    width: 25%;
+    margin: 0px;
+  }
+}
+@media (min-width: 320px) and (max-width: 769px) {
   .seccion-home {
     flex-direction: column;
   }
@@ -653,9 +750,13 @@ nav ul li {
     width: 90%;
     height: 60%;
   }
+}
+@media (max-width: 426px) {
   .home-inscribite {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     gap: 10%;
     width: 90%;
     height: auto;
@@ -684,35 +785,30 @@ nav ul li {
     transform: scale(1.2);
   }
 }
-@media (max-width: 426px) {
-  header {
-    align-items: center;
+@media (min-width: 427px) and (max-width: 769px) {
+  .home-inscribite-div1 {
+    width: 55%;
+    height: 100%;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: center;
   }
-  header nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  .home-inscribite-div2 {
+    gap: 2%;
+    height: auto;
+    padding: 1%;
+    width: 40%;
+    margin-right: 2%;
+    text-align: center;
+    box-shadow: 1px -1px 107px 12px rgba(0, 0, 0, 0.66);
   }
-  header nav ul li {
-    margin: 1%;
+  .home-inscribite-div2 a {
+    background-color: transparent;
+    transition: 0.4s;
   }
-  header nav a {
-    font-size: 0.8rem;
-  }
-}
-@media (max-width: 426px) {
-  .carousel {
-    display: block;
-    margin: 5% 0% 10% 0%;
-    padding: 0% 2% 0% 2%;
-    background-color: hsl(231, 9%, 15%);
-  }
-  .carousel-item img {
-    width: 100%;
-    height: 13rem;
-  }
-  .seccion-imagenes {
-    display: none;
+  .home-inscribite-div2 a:hover {
+    color: #ad87cd;
+    transform: scale(1.2);
   }
 }
 @media (max-width: 426px) {
@@ -724,7 +820,12 @@ nav ul li {
     width: 90%;
   }
 }
-@media (max-width: 426px) {
+@media (min-width: 427px) and (max-width: 769px) {
+  .tarjeta-noticia {
+    width: 45%;
+  }
+}
+@media (min-width: 320px) and (max-width: 769px) {
   .contenedor-tajetas-partidos {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -743,14 +844,19 @@ nav ul li {
     object-fit: fill;
     margin: 2%;
   }
-  .equipo-1 {
+  .equipo-1, .equipo-2 {
     flex-direction: column;
   }
   .equipo-2 {
     flex-direction: column;
   }
 }
-@media (max-width: 426px) {
+@media (min-width: 427px) and (max-width: 769px) {
+  .tarjeta-partido {
+    height: 8rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 769px) {
   #seccion-posiciones {
     align-items: center;
   }
@@ -790,10 +896,26 @@ nav ul li {
     text-align: center;
   }
 }
-@media (max-width: 426px) {
+@media (min-width: 427px) and (max-width: 769px) {
+  .posicion-tabla h4 {
+    font-size: 1.1rem;
+  }
+  .info-equipo img {
+    height: 60%;
+  }
+  .info-equipo h4 {
+    font-size: 1rem;
+  }
+  .datos-tabla h4 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 769px) {
   #seccion-intro-inscripciones {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   #imagen-inscripciones {
     width: 90%;
@@ -808,19 +930,20 @@ nav ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 0px;
   }
   .form-div {
     margin-top: 10%;
-    width: 80%;
+    width: 90%;
     height: auto;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
   }
   .form-div .text-input {
     height: 2rem;
   }
   #form-equipos {
-    width: 80%;
+    width: 90%;
     height: auto;
   }
   #form-equipos .text-input {
@@ -829,7 +952,19 @@ nav ul li {
   #form-submit {
     margin-top: 10%;
     margin-bottom: 5%;
-    width: 80%;
+    width: 90%;
+  }
+}
+@media (min-width: 427px) and (max-width: 769px) {
+  .form-div {
+    width: 70%;
+    padding-bottom: 8rem;
+  }
+  #form-equipos {
+    width: 70%;
+  }
+  #form-submit {
+    width: 70%;
   }
 }
 
