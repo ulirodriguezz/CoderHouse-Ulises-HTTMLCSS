@@ -3,10 +3,10 @@
 
 
 #form-submit{
-    @include flex(column,flex-start,flex-start);
+    @include flex(column,flex-start,flex-end);
     grid-area: item-3;
     width: 90%;
-    height: 90%;
+    height: 65%;
     p{
         margin-left: 0.2rem;
     }
