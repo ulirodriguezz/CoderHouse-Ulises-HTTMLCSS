@@ -32,8 +32,12 @@
 
 
 //Solo mobile
-@media(max-width : 426px){
+@media(max-width : 319px){
+    .tarjeta-partido{
+        height: 7rem;
+    }
 
+   
 }
 
 //Solo tablet

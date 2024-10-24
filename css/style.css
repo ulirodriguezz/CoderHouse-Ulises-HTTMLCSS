@@ -851,6 +851,11 @@ nav ul li {
     flex-direction: column;
   }
 }
+@media (max-width: 319px) {
+  .tarjeta-partido {
+    height: 7rem;
+  }
+}
 @media (min-width: 427px) and (max-width: 769px) {
   .tarjeta-partido {
     height: 8rem;
